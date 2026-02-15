@@ -48,7 +48,7 @@ PLAYER_PIE_CHARTS = {
     "KARPAGAVALLI":"images/KARPAGAVALLI.png",
     "KARTHIKA":"images/TP_indiv_Karthika.png",
     "NARTHIKA":"images/NARTHIKA.png",
-    "NAVYA":"images/tournmnt_perf_Navya_Indi.png",
+    "NAVYA":"images/tournment_perf_Navya_Indi.png",
     "SRI HARINI":"images/SRI_HARINI.png",
     "SUMATHI": "images/TP_indiv_Sumathi.png",
     "MAHAL":"images/TP_indiv_Mahal.png",
