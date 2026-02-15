@@ -44,8 +44,8 @@ sns.set_palette("husl")
 PLAYER_PIE_CHARTS = {
     "ABINA JANET BERIN":"images/TP_indiv_Abina.png",
     "ARIVUMATHI":"images/Arivimathi.png",
-    "GAYATHRI": "images/GAYATHRI.png",
-    "KARPAGAVALLI":"images/KARPAGAVALLI.png",
+    "GAYATHIRI": "images/GAYATHIRI.png",
+    "KARPAKAVALLI":"images/KARPAKAVALLI.png",
     "KARTHIKA":"images/TP_indiv_Karthika.png",
     "NARTHIKA":"images/NARTHIKA.png",
     "NAVYA":"images/tournment_perf_Navya_Indi.png",
@@ -62,7 +62,7 @@ PLAYER_DETAILS_CHART ="images/player_details_analysis.png"
 
 # Top 5 Players Web Charts - Individual radar/web charts
 TOP5_WEB_CHARTS = {
-    "KARPAGAVALLI": "images/karpaga_attend_web.png",
+    "KARPAKAVALLI": "images/karpaga_attend_web.png",
     "NARTHIKA": "images/narthika_attend_web.png",
     "NAVYA": "images/navya_attend_web.png",
     "SUMATHI": "images/sumathi_attend_web.png",
