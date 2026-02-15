@@ -44,12 +44,12 @@ sns.set_palette("husl")
 PLAYER_PIE_CHARTS = {
     "ABINA JANET BERIN":"images/TP_indiv_Abina.png",
     "ARIVUMATHI":"images/Arivimathi.png",
-    "GAYATHIRI": "images/GAYATHRI.png",
-    "KARPAKAVALLI":"images/KARPAGAVALLI.png",
+    "GAYATHRI": "images/GAYATHRI.png",
+    "KARPAGAVALLI":"images/KARPAGAVALLI.png",
     "KARTHIKA":"images/TP_indiv_Karthika.png",
     "NARTHIKA":"images/NARTHIKA.png",
     "NAVYA":"images/tournmnt perf_Navya_Indi.png",
-    "SRI HARINI":"images/SRI HARINI.png",
+    "SRI HARINI":"images/SRI_HARINI.png",
     "SUMATHI": "images/TP_indiv_Sumathi.png",
     "MAHAL":"images/TP_indiv_MahaL.png",
     "HARINI T":"images/TP_indiv_Harini T.png"
