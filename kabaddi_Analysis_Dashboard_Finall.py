@@ -48,23 +48,23 @@ PLAYER_PIE_CHARTS = {
     "KARPAGAVALLI":"images/KARPAGAVALLI.png",
     "KARTHIKA":"images/TP_indiv_Karthika.png",
     "NARTHIKA":"images/NARTHIKA.png",
-    "NAVYA":"images/tournmnt perf_Navya_Indi.png",
+    "NAVYA":"images/tournmnt_perf_Navya_Indi.png",
     "SRI HARINI":"images/SRI_HARINI.png",
     "SUMATHI": "images/TP_indiv_Sumathi.png",
-    "MAHAL":"images/TP_indiv_MahaL.png",
-    "HARINI T":"images/TP_indiv_Harini T.png"
+    "MAHAL":"images/TP_indiv_Mahal.png",
+    "HARINI T":"images/TP_indiv_Harini_T.png"
 }
 
 # Other visualization images
-AVG_POINTS_CHART = "images/ind_avg points.png"
-PERF_VS_ATTENDANCE_CHART = "images/perf vs attend.png"
+AVG_POINTS_CHART = "images/ind_avg_points.png"
+PERF_VS_ATTENDANCE_CHART = "images/perf_vs_attend.png"
 PLAYER_DETAILS_CHART ="images/player_details_analysis.png"
 
 # Top 5 Players Web Charts - Individual radar/web charts
 TOP5_WEB_CHARTS = {
     "NARTHIKA": "images/narthika_attend_web.png",
-    "ARIVUMATHI": "images/Arivu_attend_web ch.png",
-    "KARPAKAVALLI": "images/karpaga_attend_web.png",
+    "ARIVUMATHI": "images/Arivu_attend_web_ch.png",
+    "KARPAGAVALLI": "images/karpaga_attend_web.png",
     "SUMATHI": "images/sumathi_attend_web.png",
     "NAVYA": "images/navya_attend_web.png"
 }
