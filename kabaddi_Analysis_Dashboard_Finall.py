@@ -42,34 +42,34 @@ sns.set_palette("husl")
 
 # Individual player pie charts - Dictionary mapping player names to image paths
 PLAYER_PIE_CHARTS = {
-    "ABINA JANET BERIN": r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\TP_indiv_Abina.png",
-    "ARIVUMATHI": r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\Arivimathi.png",
-    "GAYATHIRI": r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\GAYATHRI.png",
-    "KARPAKAVALLI": r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\KARPAGAVALLI.png",
-    "KARTHIKA": r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\TP_indiv_Karthika.png",
-    "NARTHIKA": r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\NARTHIKA.png",
-    "NAVYA": r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\tournmnt perf_Navya_Indi.png",
-    "SRI HARINI": r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\SRI HARINI.png",
-    "SUMATHI": r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\TP_indiv_Sumathi.png",
-    "MAHAL": r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\TP_indiv_MahaL.png",
-    "HARINI T": r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\TP_indiv_Harini T.png"
+    "ABINA JANET BERIN":"images\TP_indiv_Abina.png",
+    "ARIVUMATHI":"images\Arivimathi.png",
+    "GAYATHIRI": "images\GAYATHRI.png",
+    "KARPAKAVALLI":"images\KARPAGAVALLI.png",
+    "KARTHIKA":"images\TP_indiv_Karthika.png",
+    "NARTHIKA":"images\NARTHIKA.png",
+    "NAVYA":"images\tournmnt perf_Navya_Indi.png",
+    "SRI HARINI":"images\SRI HARINI.png",
+    "SUMATHI": "images\TP_indiv_Sumathi.png",
+    "MAHAL":"images\TP_indiv_MahaL.png",
+    "HARINI T":"images\TP_indiv_Harini T.png"
 }
 
 # Other visualization images
-AVG_POINTS_CHART = r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\ind_avg points.png"
-PERF_VS_ATTENDANCE_CHART = r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\perf vs attend.png"
-PLAYER_DETAILS_CHART = r"C:\Users\samyu\Desktop\player_details_analysis.png"
+AVG_POINTS_CHART = "images\ind_avg points.png"
+PERF_VS_ATTENDANCE_CHART = "images\perf vs attend.png"
+PLAYER_DETAILS_CHART ="images\player_details_analysis.png"
 
 # Top 5 Players Web Charts - Individual radar/web charts
 TOP5_WEB_CHARTS = {
-    "NARTHIKA": r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\narthika_attend_web.png",
-    "ARIVUMATHI": r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\Arivu_attend_web ch.png",
-    "KARPAKAVALLI": r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\karpaga_attend_web.png",
-    "SUMATHI": r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\sumathi_attend_web.png",
-    "NAVYA": r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\navya_attend_web.png"
+    "NARTHIKA": "images\narthika_attend_web.png",
+    "ARIVUMATHI": "images\Arivu_attend_web ch.png",
+    "KARPAKAVALLI": "images\karpaga_attend_web.png",
+    "SUMATHI": "images\sumathi_attend_web.png",
+    "NAVYA": "images\navya_attend_web.png"
 }
 
-RADAR_ALL_CHART = r"C:\Users\samyu\Desktop\radar_all_players.png"
+RADAR_ALL_CHART = r"images\radar_all_players.png"
 
 # ============================================================
 
@@ -229,8 +229,8 @@ def load_attendance_data(attendance_file):
 # ============================================================
 
 # IMPORTANT: Update these paths to match your file locations
-match_file = r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\Kabaddi match points final.xlsx"
-attendance_file = r"C:\Users\samyu\Desktop\PAX-Kabbaddi analysis\Copy_of_PAX_Attendance__processed.xlsx"
+match_file = "Kabaddi match points final.xlsx"
+attendance_file ="Copy_of_PAX_Attendance__processed.xlsx"
 
 # Load data
 try:
