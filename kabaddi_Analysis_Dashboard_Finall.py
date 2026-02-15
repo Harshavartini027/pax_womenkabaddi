@@ -42,34 +42,34 @@ sns.set_palette("husl")
 
 # Individual player pie charts - Dictionary mapping player names to image paths
 PLAYER_PIE_CHARTS = {
-    "ABINA JANET BERIN":"images\TP_indiv_Abina.png",
-    "ARIVUMATHI":"images\Arivimathi.png",
-    "GAYATHIRI": "images\GAYATHRI.png",
-    "KARPAKAVALLI":"images\KARPAGAVALLI.png",
-    "KARTHIKA":"images\TP_indiv_Karthika.png",
-    "NARTHIKA":"images\NARTHIKA.png",
-    "NAVYA":"images\tournmnt perf_Navya_Indi.png",
-    "SRI HARINI":"images\SRI HARINI.png",
-    "SUMATHI": "images\TP_indiv_Sumathi.png",
-    "MAHAL":"images\TP_indiv_MahaL.png",
-    "HARINI T":"images\TP_indiv_Harini T.png"
+    "ABINA JANET BERIN":"images/TP_indiv_Abina.png",
+    "ARIVUMATHI":"images/Arivimathi.png",
+    "GAYATHIRI": "images/GAYATHRI.png",
+    "KARPAKAVALLI":"images/KARPAGAVALLI.png",
+    "KARTHIKA":"images/TP_indiv_Karthika.png",
+    "NARTHIKA":"images/NARTHIKA.png",
+    "NAVYA":"images/tournmnt perf_Navya_Indi.png",
+    "SRI HARINI":"images/SRI HARINI.png",
+    "SUMATHI": "images/TP_indiv_Sumathi.png",
+    "MAHAL":"images/TP_indiv_MahaL.png",
+    "HARINI T":"images/TP_indiv_Harini T.png"
 }
 
 # Other visualization images
-AVG_POINTS_CHART = "images\ind_avg points.png"
-PERF_VS_ATTENDANCE_CHART = "images\perf vs attend.png"
-PLAYER_DETAILS_CHART ="images\player_details_analysis.png"
+AVG_POINTS_CHART = "images/ind_avg points.png"
+PERF_VS_ATTENDANCE_CHART = "images/perf vs attend.png"
+PLAYER_DETAILS_CHART ="images/player_details_analysis.png"
 
 # Top 5 Players Web Charts - Individual radar/web charts
 TOP5_WEB_CHARTS = {
-    "NARTHIKA": "images\narthika_attend_web.png",
-    "ARIVUMATHI": "images\Arivu_attend_web ch.png",
-    "KARPAKAVALLI": "images\karpaga_attend_web.png",
-    "SUMATHI": "images\sumathi_attend_web.png",
-    "NAVYA": "images\navya_attend_web.png"
+    "NARTHIKA": "images/narthika_attend_web.png",
+    "ARIVUMATHI": "images/Arivu_attend_web ch.png",
+    "KARPAKAVALLI": "images/karpaga_attend_web.png",
+    "SUMATHI": "images/sumathi_attend_web.png",
+    "NAVYA": "images/navya_attend_web.png"
 }
 
-RADAR_ALL_CHART = r"images\radar_all_players.png"
+RADAR_ALL_CHART = "images/radar_all_players.png"
 
 # ============================================================
 
@@ -401,12 +401,17 @@ if page == "👤 Individual Analysis":
         if pie_chart_path and os.path.exists(pie_chart_path):
             display_image(pie_chart_path, caption=f"{selected_player} - Tournament Performance Distribution")
         else:
-            st.info(f"ℹ️ Pie chart not available for {selected_player}.\n\n"
-                   f"To add a pie chart for this player:\n"
-                   f"1. Create a pie chart showing round-wise performance\n"
-                   f"2. Save it to your preferred location\n"
-                   f"3. Update the PLAYER_PIE_CHARTS dictionary (around line 42) with:\n\n"
-                   f'```python\n"{selected_player}": r"C:\\path\\to\\your\\image.png"\n```')
+            st.info(
+    f"📊 Pie chart not available for {selected_player}.\n\n"
+    "To add a pie chart for this player:\n"
+    "1. Create a pie chart showing round-wise performance\n"
+    "2. Save the image inside the `images/` folder of this project\n"
+    "3. Update the `PLAYER_PIE_CHARTS` dictionary with a relative path\n\n"
+    "Example:\n\n"
+    "PLAYER_PIE_CHARTS = {\n"
+    f"  '{selected_player}': 'images/{selected_player.lower().replace(' ', '_')}_pie.png'\n"
+    "}"
+)
     
     # Add "Average Points per Tournament by Each Player" visualization
     st.markdown("---")
@@ -687,14 +692,19 @@ else:
                 with col1 if idx % 2 == 0 else col2:
                     display_image(chart_path, caption=f"{player_name} - Performance Web Chart")
         else:
-            st.info("📊 Performance web charts not configured. To add web charts:\n\n"
-                   "1. Create radar/web charts for your top players\n"
-                   "2. Save them to your desktop or preferred location\n"
-                   "3. Update the TOP5_WEB_CHARTS dictionary in the code (around line 60) with the correct paths\n\n"
-                   "Example:\n```python\nTOP5_WEB_CHARTS = {\n"
-                   "    'KARPAKAVALLI': r'C:\\Users\\samyu\\Desktop\\karpakavalli_web.png',\n"
-                   "    'SRI HARINI': r'C:\\Users\\samyu\\Desktop\\sriharini_web.png',\n"
-                   "}\n```")
+            st.info(
+    "📊 Performance web charts not configured.\n\n"
+    "To add performance web/radar charts:\n"
+    "1. Create radar/web charts for your top players\n"
+    "2. Save them inside the `images/` folder of this project\n"
+    "3. Update the `TOP5_WEB_CHARTS` dictionary with relative paths\n\n"
+    "Example:\n\n"
+    "TOP5_WEB_CHARTS = {\n"
+    "  'KARPAGAVALLI': 'images/karpaga_attend_web.png',\n"
+    "  'SRI HARINI': 'images/sriharini_attend_web.png'\n"
+    "}"
+)
+
 
 # Footer
 st.markdown("---")
